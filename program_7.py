@@ -1,0 +1,20 @@
+import turtle as tk
+t=tk.Turtle()
+t.pensize(3)
+def draw(x,y,color,radius):
+    t.up()
+    t.goto(x,y)
+    t.down()
+    t.begin_fill()
+    t.fillcolor(color)
+    t.down()
+    t.circle(radius)
+    t.end_fill()
+    t.hideturtle()
+
+draw(0,-50,'green',50)
+draw(200,200,'orange',50)
+draw(-200,200,'blue',50)
+draw(-200,-200,'red',-50)
+draw(200,-200,'yellow',-50)
+tk.exitonclick()

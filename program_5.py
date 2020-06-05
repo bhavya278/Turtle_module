@@ -1,0 +1,13 @@
+import turtle as tk
+t=tk.Turtle()
+t.up()
+t.goto(0,-100)
+t.down()
+t.circle(100)
+t.reset()
+t.up()
+t.goto(100,100)
+t.down()
+t.circle(100)
+t.hideturtle()
+tk.exitonclick()
